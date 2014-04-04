@@ -1,0 +1,12 @@
+body:before {content: 'mobile'; visibility: hidden; position: absolute; z-index: -1}
+body {border-top: 2px solid red; margin: 0;}
+
+@media (min-width: 600px) {
+    body:before {content: 'tablet';}
+    body {border-top: 2px solid green;}
+}
+
+@media (min-width: 992px) {
+    body:before {content: 'desktop';}
+    body {border-top: 2px solid blue;}
+}
